@@ -11,8 +11,8 @@ LUCI_TITLE:=LuCI Support for wizard
 LUCI_DEPENDS:=
 LUCI_PKGARCH:=all
 PKG_NAME:=luci-app-netwizard
-PKG_VERSION:=2.0.5
-PKG_RELEASE:=20251225
+PKG_VERSION:=2.1.1
+PKG_RELEASE:=20260116
 
 PKG_LICENSE:=GPLv3
 PKG_LICENSE_FILES:=LICENSE
@@ -24,7 +24,7 @@ define Package/luci-app-netwizard
 	SUBMENU:=Configuration netWizard Support
 	TITLE:=LuCI Support for netwizard
 	PKGARCH:=all
-	DEPENDS:=+luci-base +rpcd-mod-iwinfo +libustream-mbedtls +ca-bundle
+	DEPENDS:=+luci-base
 endef
 
 define Package/luci-app-netwizard/description
